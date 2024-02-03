@@ -1,7 +1,6 @@
 import Button from "./Button/Index";
 import style from "./PasswordGererator.module.css"
 import usePasswordGenerator from "../../hooks/usePasswordGenerator";
-
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

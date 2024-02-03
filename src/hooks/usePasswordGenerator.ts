@@ -1,5 +1,5 @@
 import { useState } from "react";
-import passwordGenerate from "../characters"
+import passwordCreated from "../characters"
 import style from "../components/PasswordGenerator/Button/Button.module.css"
 import { toast } from 'react-toastify';
 
@@ -10,7 +10,7 @@ export default function usePasswordGenerator() {
   const [ copyText, setCopyText] = useState("Copiar!")
 
   const generate = () => {
-    setPassword(passwordGenerate())
+    setPassword(passwordCreated())
     setCopyText("Copiar!")
     const button = document.querySelectorAll("button[id=btnPassword]")
     addClassSelect(button[0])
