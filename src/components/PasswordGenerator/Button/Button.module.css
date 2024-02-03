@@ -1,0 +1,21 @@
+.btn {
+  background-color: #1A1A1A;
+  border: none;
+  color: #fff;
+  padding: .6rem 1rem;
+  border-radius: .5rem;
+  font-size: .9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s;
+  border: 2px solid #1A1A1A;
+}
+
+.btn:hover {
+  transform: scale(1.1); 
+  border: 2px solid #454A9E;
+}
+
+.select {
+  border: 2px solid #454A9E;
+}
