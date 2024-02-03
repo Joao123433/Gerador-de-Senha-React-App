@@ -92,7 +92,7 @@ export default function usePasswordGenerator() {
 - Este hook utiliza o `useState` do React para gerenciar o estado da senha e o texto do botão de cópia. A função `generate` é responsável por gerar uma nova senha, e a função `copy` lida com a cópia da senha para a área de transferência.
 
 ## Funcionalidades Adicionais:
-- Utiliza a biblioteca r`eact-toastify` para exibir notificações quando a senha é copiada.
+- Utiliza a biblioteca `react-toastify` para exibir notificações quando a senha é copiada.
 - Aplica estilos usando arquivos `.module.css` para modularizar os estilos dos componentes.
 
 Este projeto é um exemplo simples, mas funcional, de um gerador de senha em React, destacando o uso de componentes reutilizáveis e hooks personalizados para gerenciar o estado e as funcionalidades do aplicativo.
