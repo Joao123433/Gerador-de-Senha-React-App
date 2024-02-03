@@ -95,4 +95,7 @@ export default function usePasswordGenerator() {
 - Utiliza a biblioteca `react-toastify` para exibir notificações quando a senha é copiada.
 - Aplica estilos usando arquivos `.module.css` para modularizar os estilos dos componentes.
 
+## Dependências:
+- NodeJS
+
 Este projeto é um exemplo simples, mas funcional, de um gerador de senha em React, destacando o uso de componentes reutilizáveis e hooks personalizados para gerenciar o estado e as funcionalidades do aplicativo.
