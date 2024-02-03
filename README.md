@@ -1,23 +1,24 @@
 # Gerador de Senha feito em React + TypeScript + Vite
 Este é um projeto React que implementa um gerador de senha simples. O aplicativo é composto por componentes reutilizáveis e utiliza um hook personalizado para gerar senhas e manipular a funcionalidade de cópia.
 
-1. Estrutura do Projeto
-`src/components/PasswordGenerator:`
+## Estrutura do Projeto
+src/components/PasswordGenerator:
 - `Button:` Contém o componente de botão reutilizável.
 - `PasswordGenerator.module.css:` Arquivo de estilos específicos para o componente PasswordGenerator.
 - `PasswordGenerator.tsx:`  O componente principal que renderiza o gerador de senha.
 
-`src/style:`
+src/style:
 - `global.css:` Arquivo de estilos globais para o aplicativo.
 
-`hooks:`
+hooks:
 - `usePasswordGenerator.ts:` Contém o hook personalizado responsável por gerenciar o estado da senha, gerar senhas aleatórias, e lidar com a funcionalidade de cópia.
 
-`App.tsx:` O componente raiz do aplicativo React, que importa e renderiza o componente PasswordGenerator.
+App.tsx:
+- O componente raiz do aplicativo React, que importa e renderiza o componente PasswordGenerator.
 
-2. Componentes:
-`App.tsx:`
-Este componente representa a estrutura geral do aplicativo, exibindo o título "Gerador de Senha" e o componente `PasswordGenerator.`
+## Componentes:
+App.tsx:
+- Este componente representa a estrutura geral do aplicativo, exibindo o título "Gerador de Senha" e o componente `PasswordGenerator/index.tsx`
 ~~~TypeScript JSX
 export default function App() {
   return (
@@ -31,8 +32,8 @@ export default function App() {
 }
 ~~~
 
-`PasswordGenerator/index.tsx`
-Este componente é o coração do aplicativo. Ele utiliza o componente Button e o hook personalizado `usePasswordGenerator` para fornecer funcionalidades de geração e cópia de senhas.
+PasswordGenerator/index.tsx
+- Este componente é o coração do aplicativo. Ele utiliza o componente Button e o hook personalizado `usePasswordGenerator` para fornecer funcionalidades de geração e cópia de senhas.
 ~~~TypeScript JSX
 export default function PasswordGererator() {
   const { password, generate, copyText, copy } = usePasswordGenerator()
@@ -50,8 +51,8 @@ export default function PasswordGererator() {
 }
 ~~~
 
-`Button/index.tsx`
-Um componente de botão simples que pode ser reutilizado em todo o aplicativo.
+Button/index.tsx
+- Um componente de botão simples que pode ser reutilizado em todo o aplicativo.
 ~~~TypeScript JSX
 export default function Button({ children, ...props }: ButtonI) {
   return (
@@ -62,8 +63,9 @@ export default function Button({ children, ...props }: ButtonI) {
 }
 ~~~
 
-3. Hook Personalizado: `usePasswordGenerator.ts`
-Este hook é responsável por gerenciar o estado da senha, gerar senhas aleatórias, e lidar com a funcionalidade de cópia.
+## Hook Personalizado: 
+usePasswordGenerator.ts
+- Este hook é responsável por gerenciar o estado da senha, gerar senhas aleatórias, e lidar com a funcionalidade de cópia.
 ~~~TypeScript JSX
 export default function usePasswordGenerator() {
   const notify = () => toast("Senha Copiada", { theme: "dark" });
@@ -84,10 +86,10 @@ export default function usePasswordGenerator() {
   return { password, generate, copyText, copy };
 }
 ~~~
-Este hook utiliza o `useState` do React para gerenciar o estado da senha e o texto do botão de cópia. A função `generate` é responsável por gerar uma nova senha, e a função `copy` lida com a cópia da senha para a área de transferência.
+- Este hook utiliza o `useState` do React para gerenciar o estado da senha e o texto do botão de cópia. A função `generate` é responsável por gerar uma nova senha, e a função `copy` lida com a cópia da senha para a área de transferência.
 
-4. Funcionalidades Adicionais:
-Utiliza a biblioteca r`eact-toastify` para exibir notificações quando a senha é copiada.
-Aplica estilos usando arquivos `.module.css` para modularizar os estilos dos componentes.
+## Funcionalidades Adicionais:
+- Utiliza a biblioteca r`eact-toastify` para exibir notificações quando a senha é copiada.
+- Aplica estilos usando arquivos `.module.css` para modularizar os estilos dos componentes.
 
 Este projeto é um exemplo simples, mas funcional, de um gerador de senha em React, destacando o uso de componentes reutilizáveis e hooks personalizados para gerenciar o estado e as funcionalidades do aplicativo.
